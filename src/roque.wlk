@@ -22,7 +22,7 @@ object roque {
 		
 	}
 	
-	method cambiarComida(comida){
+	method cambiarComida(comida){ 
 		game.addVisualIn(comidaDeAve, comida.posicion())
 		game.removeVisual(comida)
 		comidaDeAve = comida
