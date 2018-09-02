@@ -13,18 +13,32 @@ program PepitaGame {
 	game.ground("suelo.png")
 
 //	VISUALES
-	game.addVisualIn(alpiste, game.at(5,5))
-	game.addVisualIn(manzana, game.at(5,1))
+	game.addVisual(alpiste)
+	game.addVisual(manzana)
 	game.addVisual(buenosAires)
 	game.addVisual(villaGesell)
 	game.addVisual(pepita)
 	game.addVisualCharacter(roque)
 	
+	
+//	PEPITA SE QUEJA
+	
+	
+
+//	COLISIONES
+	game.whenCollideDo(manzana, { personaje=> personaje.guardarComida(manzana) }) 
+	game.whenCollideDo(alpiste, { personaje=> personaje.guardarComida(alpiste) }) 
+	game.whenCollideDo(pepita, {roque => roque.darComidita(pepita)} )
+	game.whenCollideDo(alpiste,{ persoanje=> roque.cambiarComida(alpiste) } )
+	game.whenCollideDo(manzana,{ personaje=> roque.cambiarComida(manzana) } )
+
+	
 
 //	TECLADO
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
 	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
-		
+	
+
 //	START
 	game.start()
 }
