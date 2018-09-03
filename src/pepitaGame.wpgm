@@ -28,8 +28,6 @@ program PepitaGame {
 	
 	
 	game.whenCollideDo(roque, {alimento=> roque.guardarAlimento(alimento)})
-	game.whenCollideDo(roque, {alimento=> roque.guardarAlimento(alimento)})
-	game.whenCollideDo(roque, {alimento=> roque.guardarAlimento(alimento)})
 	game.whenCollideDo(pepita, {roque => roque.darComidita(pepita)} )
  
 	
