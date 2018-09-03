@@ -3,7 +3,8 @@ object villaGesell {
 	method nombre() = "Villa Gesell"
 	method posicion() = game.at(8,3)
 
-	method guardarComida(comida){}
+	method guardarAlimento(alimento){}//testeo
+	
 	method darComidita(ave){}
 	
 }
@@ -13,6 +14,7 @@ object buenosAires {
 	method nombre() = "Buenos Aires"
 	method posicion() = game.at(1,1)
 
-	method guardarComida(comida){}
+	method guardarAlimento(alimento){}//testeo
+	
 	method darComidita(ave){}
 }

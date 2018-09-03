@@ -9,7 +9,10 @@ object manzana {
 	
 	method darComidita(ave){}
 	
-	method guardarComida(comida){}
+	
+	//method guardarComida(comida){}
+
+	method guardarAlimento(alimento){}//testeo
 }
 
 object alpiste {
@@ -18,7 +21,9 @@ object alpiste {
 	const property imagen = "alpiste.png"
 	method energia() = 5
 
-	method guardarComida(comida){}
+	//method guardarComida(comida){}
+	
+	method guardarAlimento(alimento){}//testeo
 	
 	method darComidita(ave){}
 }

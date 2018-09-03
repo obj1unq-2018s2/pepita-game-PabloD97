@@ -38,7 +38,7 @@ object pepita {
 		self.posicion(nuevaPosicion)
 	}	
 
-	method guardarComida(comida){}
+	method guardarAlimento(alimento){}
 	
 	
 }
