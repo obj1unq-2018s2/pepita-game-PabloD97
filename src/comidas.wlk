@@ -10,20 +10,17 @@ object manzana {
 	method darComidita(ave){}
 	
 	
-	//method guardarComida(comida){}
-
-	method guardarAlimento(alimento){}//testeo
+	method guardarAlimento(alimento){}
 }
-
 object alpiste {
 	
 	var property posicion = game.at(5,5)
 	const property imagen = "alpiste.png"
 	method energia() = 5
 
-	//method guardarComida(comida){}
 	
-	method guardarAlimento(alimento){}//testeo
+	
+	method guardarAlimento(alimento){}
 	
 	method darComidita(ave){}
 }

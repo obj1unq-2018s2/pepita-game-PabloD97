@@ -21,8 +21,6 @@ program PepitaGame {
 	game.addVisualCharacter(roque)
 	
 	
-//	PEPITA SE QUEJA
-	
 	
 
 //	COLISIONES
@@ -34,12 +32,6 @@ program PepitaGame {
 	game.whenCollideDo(roque, {alimento=> roque.guardarAlimento(alimento)})
 	game.whenCollideDo(pepita, {roque => roque.darComidita(pepita)} )
  
-	//game.whenCollideDo(manzana, { algo=> roque.guardarComida(manzana) })
-	//game.whenCollideDo(alpiste, { algo=> roque.guardarComida(alpiste) }) 
-	//game.whenCollideDo(pepita, {roque => roque.darComidita(pepita)} )
-	//game.whenCollideDo(roque,{ alimento=> roque.cambiarComida(alimento) } )
-	//game.whenCollideDo(manzana,{ algo=> roque.cambiarComida(manzana) } )
-	
 	
 	
 
