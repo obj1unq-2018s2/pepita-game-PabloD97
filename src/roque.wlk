@@ -24,7 +24,7 @@ object roque {
 
 	method cambiarComida(alimento){
 			
-			game.addVisualIn(comidaDeAve, alimento.posicion().up(1))
+			game.addVisualIn(comidaDeAve, self.posicion().clone().up(1))
 			game.removeVisual(alimento)
 			comidaDeAve = alimento
 		
@@ -40,10 +40,10 @@ object roque {
 	
 	method reponerComida(alimento){
 		if(alimento.energia() == 5){
-			game.addVisualIn(alimento, game.at(8,8))
+			game.addVisualIn(alimento, game.at(1.randomUpTo(10),1.randomUpTo(10)))
 		}
 		else {
-			game.addVisualIn(alimento, game.at(9,9))
+			game.addVisualIn(alimento, game.at(1.randomUpTo(10),1.randomUpTo(10)))
 		}
 	}
 
